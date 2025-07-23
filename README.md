@@ -2,12 +2,10 @@
 
 ## Links
 
-- Discord: https://discord.gg/CvZ28vfuMt​
-- Área de membros: https://hotmart.com/pt-br/club/cleber-gasparoto/products/3563550
-
 Descubra o poder do Terraform e leve suas habilidades de automação para o próximo nível! Este curso abrangente levará você desde os fundamentos até implementações avançadas, capacitando-o a criar aplicações modernas na AWS de maneira eficiente e confiável.
 
 O que você vai aprender:
+
 - Automatizar a criação e manutenção da infraestrutura na AWS.
 - Dominar conceitos básicos e avançados, incluindo módulos, terraform CLI, terraform test e arquivos de estado do Terraform.
 - Criar um site estático com React.js utilizando AWS S3, CloudFront, certificado SSL e domínio personalizado.
@@ -15,15 +13,19 @@ O que você vai aprender:
 - Implementar uma aplicação auto-escalável com VPC, Internet Gateway, Subnets, Security Groups, EC2, Load Balancer e Auto Scaling Group.
 
 Pré-requisitos:
+
 - Noções básicas de programação.
 
 Para quem é este curso:
+
 - Desenvolvedores, DevOps ou qualquer pessoa interessada em aprender Terraform e automatizar processos de infraestrutura.
 
 Requisitos de Inscrição:
+
 - É necessário possuir uma conta na AWS (pode ser criada gratuitamente, exigindo apenas um cartão de crédito internacional).
 
 Por que escolher este curso:
+
 - Aprenda com exemplos práticos e casos reais.
 - Ganhe acesso a códigos prontos para uso em sua própria infraestrutura na AWS.
 - Desenvolva habilidades prontas para produção com as melhores práticas do mercado.
@@ -33,22 +35,26 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 ## Curriculum
 
 ### Boas vindas
+
 - Mensagem de boas vindas
 - Links para Discord e Github
 
 ### Introdução ao Terraform
+
 - O que é Terraform?
 - Como o Terraform funciona?
 - Por que utilizar o Terraform?
 - Terraform vs Alternativas
 
 ### Setup do ambiente de desenvolvimento
+
 - Instalando o Terraform
 - Instalando o TFEnv (gerenciador de versões do Terraform)
 - Configurando VSCode (editor de texto)
 - Configurando AWS CLI
 
 ### Fluxo básico de trabalho do Terraform
+
 - Criando um bucket manualmente
 - O que são Providers?
 - Providers na prática
@@ -61,6 +67,7 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - Destruindo o bucket com Terraform
 
 ### Linguagem de Configuração do Terraform
+
 - Introdução
 - Linguagem de Configuração na prática
 - O que são variáveis
@@ -86,6 +93,7 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - Expressões for e splat
 
 ### Remote state
+
 - Introdução
 - Criando o bucket e a tabela para serem usados como remote state
 - Usando o remote state
@@ -94,6 +102,7 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - Outputs do remote state
 
 ### Terraform CLI
+
 - Introdução
 - Environment variables (variáveis de ambiente)
 - terraform init
@@ -106,6 +115,7 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - terraform state na prática
 
 ### Modules
+
 - Usando módulos
 - Usando módulos da comunidade
 - Como criar módulos?
@@ -117,6 +127,7 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - Publicando nosso módulo
 
 ### Terraform test
+
 - Introdução
 - Sintaxe
 - Setup
@@ -126,6 +137,7 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - Testando o website
 
 ### Hospedando um website estático com S3, Cloudfront e Route53
+
 - Introdução
 - Instalando React.js
 - S3 bucket
@@ -136,6 +148,7 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - Destruindo a infraestrutura
 
 ### Criando uma aplicação Serverless
+
 - Introdução
 - Cognito UI
 - Cognito código do Terraform
@@ -154,8 +167,8 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - Route53
 - Destruindo a infraestrutura
 
-
 ### Criando uma aplicação auto-escalável
+
 - Introdução
 - VPC
 - Launch template
@@ -165,6 +178,7 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - RDS, EC2 e terraform destroy
 
 ### Integração entre Frontend (react.js) e Backend (aplicação serverless)
+
 - Introdução
 - S3 e Cloudfront
 - Configuração do CORS dentro da API Gateway
