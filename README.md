@@ -185,3 +185,5 @@ Pronto para transformar sua abordagem à infraestrutura? Inscreva-se agora e com
 - Configuração dos logs dentro da API Gateway
 - Teste de integração entre o Frontend e o Backend
 - Destruindo a infraestrutura
+
+ok
