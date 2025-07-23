@@ -7,8 +7,8 @@ output "caller_identity" {
 
 output "s3_bucket" {
   value = {
-    arn         = data.aws_s3_bucket.caixa_do_cleber.arn
-    domain_name = data.aws_s3_bucket.caixa_do_cleber.bucket_domain_name
+    arn         = data.aws_s3_bucket.caixa_do_edemir.arn
+    domain_name = data.aws_s3_bucket.caixa_do_edemir.bucket_domain_name
   }
 }
 
