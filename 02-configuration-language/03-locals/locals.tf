@@ -8,7 +8,7 @@ locals {
     "CreatedAt"  = "2025-07-23"
     "ManagedBy"  = "Terraform"
     "Owner"      = "Edemir Toldo"
-    "Repository" = "github.com/cleber-gasparoto-org/curso-terraform-aws-3s"
+    "Repository" = "github.com/edemirtoldo/curso-terraform-aws"
   }
 
   common_tags = merge(local.required_tags, var.tags)
