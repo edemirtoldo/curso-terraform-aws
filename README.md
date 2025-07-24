@@ -20,6 +20,7 @@ Veja os tutoriais nos subdiretórios:
 - [11-provider](02-configuration-language/11-provider/README.md)
 - [12-lifecycle](02-configuration-language/12-lifecycle/README.md)
 - [13-built-in-functions](02-configuration-language/13-built-in-functions/README.md)
+- [14-terraform-data](02-configuration-language/14-terraform-data/README.md)
 
 ... e assim por diante.
 
