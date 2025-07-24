@@ -23,6 +23,9 @@ website/node_modules
 *.iml
 *.test
 
+# Arquivos de output de comandos
+.terraform.lock.hcl
+
 website/vendor
 
 # Test exclusions
