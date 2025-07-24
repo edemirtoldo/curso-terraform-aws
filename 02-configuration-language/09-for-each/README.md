@@ -56,4 +56,4 @@ output "pets" {
 ## Referências
 
 - [Documentação oficial do for_each](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each)
--
+- [random_pet resource](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet)
