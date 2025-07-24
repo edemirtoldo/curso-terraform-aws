@@ -1,4 +1,4 @@
-## Explicação Básica do Terraform (com exemplo AWS S3)
+## Explicação Básica do Terraform `main.tf` (com exemplo AWS S3)
 
 ### 1. Bloco `terraform`
 
