@@ -14,6 +14,7 @@ Veja os tutoriais nos subdiretórios:
 - [05-interpolation](02-configuration-language/05-interpolation/README.md)
 - [06-data-sources](02-configuration-language/06-data-sources/README.md)
 - [07-import-block](02-configuration-language/07-import-block/README.md)
+- [08-count](02-configuration-language/08-count/README.md)
 
 ... e assim por diante.
 
