@@ -2,7 +2,7 @@
 
 # 01 - Terraform Basic
 
-Veja detalhes no [README do 01-terraform-basic](01-terraform-basic/README.md)
+Veja detalhes no [Explicação Básica do main.tf - 01-terraform-basic](01-terraform-basic/README.md)
 
 ## 02 - Configuration Language
 
