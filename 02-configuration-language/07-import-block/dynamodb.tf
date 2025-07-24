@@ -1,4 +1,4 @@
-resource "aws_dynamodb_table" "tabela_do_cleber" {
+resource "aws_dynamodb_table" "tabela_do_edemir" {
   billing_mode                = "PROVISIONED"
   deletion_protection_enabled = false
   hash_key                    = "id"
