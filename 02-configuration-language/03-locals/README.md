@@ -48,3 +48,5 @@ resource "aws_s3_bucket" "meu_bucket" {
 - Use para cálculos, concatenações e formatos reutilizados
 
 - Não são expostos fora do módulo (diferente de outputs)
+
+[Documentação oficial sobre locals no Terraform - HashiCorp](https://developer.hashicorp.com/terraform/language/values/locals)
