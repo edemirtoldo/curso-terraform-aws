@@ -21,8 +21,7 @@ Veja os tutoriais nos subdiretórios:
 - [12-lifecycle](02-configuration-language/12-lifecycle/README.md)
 - [13-built-in-functions](02-configuration-language/13-built-in-functions/README.md)
 - [14-terraform-data](02-configuration-language/14-terraform-data/README.md)
-
-... e assim por diante.
+- [15-for-splat-expressions](02-configuration-language/15-for-splat-expressions/README.md)
 
 ## 03 - Remote State
 
