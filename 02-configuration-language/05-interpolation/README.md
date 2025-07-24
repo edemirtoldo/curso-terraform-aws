@@ -2,8 +2,6 @@
 
 ## Quando e como usar interpolação no Terraform, com exemplos claros e boas práticas.
 
----
-
 ## ✅ O que é interpolação?
 
 Interpolação em Terraform permite **inserir dinamicamente valores dentro de strings**. É feita com a sintaxe `${...}` e pode referenciar:
@@ -12,8 +10,6 @@ Interpolação em Terraform permite **inserir dinamicamente valores dentro de st
 - Atributos de recursos (`aws_instance.exemplo.id`)
 - Data sources (`data.aws_ami.ubuntu.id`)
 - Funções (`join()`, `format()`, etc.)
-
----
 
 ## 🔍 Quando usar interpolação
 
