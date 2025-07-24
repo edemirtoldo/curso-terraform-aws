@@ -1,6 +1,6 @@
 # Curso Terraform AWS
 
-# 01 - Terraform Basic
+## 01 - Terraform Basic
 
 Veja detalhes no [Explicação Básica do main.tf - 01-terraform-basic](01-terraform-basic/README.md)
 
@@ -15,6 +15,10 @@ Veja os tutoriais nos subdiretórios:
 - [06-data-sources](02-configuration-language/06-data-sources/README.md)
 
 ... e assim por diante.
+
+## 03 - Remote State
+
+[Leia aqui](03-remote-state/README.md)
 
 ## 04 - Terraform CLI
 
