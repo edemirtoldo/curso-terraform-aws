@@ -13,6 +13,7 @@ Veja os tutoriais nos subdiretórios:
 - [04-outputs](02-configuration-language/04-outputs/README.md)
 - [05-interpolation](02-configuration-language/05-interpolation/README.md)
 - [06-data-sources](02-configuration-language/06-data-sources/README.md)
+- [07-import-block](02-configuration-language/07-import-block/README.md)
 
 ... e assim por diante.
 
