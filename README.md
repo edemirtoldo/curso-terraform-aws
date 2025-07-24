@@ -17,6 +17,7 @@ Veja os tutoriais nos subdiretórios:
 - [08-count](02-configuration-language/08-count/README.md)
 - [09-for-each](02-configuration-language/09-for-each/README.md)
 - [10-depends-on](02-configuration-language/10-depends-on/README.md)
+- [11-provider](02-configuration-language/11-provider/README.md)
 
 ... e assim por diante.
 
