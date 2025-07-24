@@ -70,3 +70,7 @@ resource "aws_s3_bucket_versioning" "versioning_example" {
 3. Executa terraform init para baixar providers.
 
 4. Executa terraform apply para criar os recursos declarados.
+
+[!NOTE]
+
+> 💡 Projeto mantido por [Edemir Toldo](https://www.linkedin.com/in/edemirtoldo/)
