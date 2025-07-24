@@ -15,6 +15,7 @@ Veja os tutoriais nos subdiretórios:
 - [06-data-sources](02-configuration-language/06-data-sources/README.md)
 - [07-import-block](02-configuration-language/07-import-block/README.md)
 - [08-count](02-configuration-language/08-count/README.md)
+- [09-for-each](02-configuration-language/09-for-each/README.md)
 
 ... e assim por diante.
 
