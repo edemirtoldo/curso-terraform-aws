@@ -1,4 +1,4 @@
-# 🔁 Expressões `for` e Splat no Terraform
+# 🔁 Expressões `for` e `Splat` no Terraform
 
 Esta pasta demonstra como usar **expressões for** e **splat expressions** para manipular listas, mapas e atributos de recursos de forma dinâmica e eficiente.
 
@@ -38,5 +38,5 @@ local.ips[*].public
 
 ## Referências
 
-- [Expressões for](https://developer.hashicorp.com/terraform/language/expressions/for)
+- [for Expressions](https://developer.hashicorp.com/terraform/language/expressions/for)
 - [Splat expressions](https://developer.hashicorp.com/terraform/language/expressions/splat)
