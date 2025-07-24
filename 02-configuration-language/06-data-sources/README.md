@@ -1,42 +1,28 @@
-## 📘 Quando usar `data` (Data Source) no Terraform?
+# 📘 Data Sources no Terraform
 
-O bloco `data` é usado no Terraform quando você **precisa obter informações de recursos que já existem**, ou seja, **não serão criados** pelo seu código Terraform, mas você precisa referenciá-los.
+Esta pasta demonstra como utilizar **data sources** no Terraform para consultar informações de recursos já existentes na AWS.
 
----
+## O que são Data Sources?
 
-### ✅ Casos comuns de uso
+- Permitem **ler dados de recursos existentes** (não criados pelo seu código Terraform).
+- Úteis para buscar informações de recursos criados manualmente, por outros times ou módulos.
 
-1. **Recursos existentes fora do seu controle**
+## Exemplos usados aqui
 
-   - Buscar recursos criados manualmente ou por outro time/módulo.
-   - **Exemplo:** Obter a AMI mais recente da Amazon Linux:
+- [`data.aws_caller_identity.current`](data.tf): Consulta informações da conta AWS atual.
+- [`data.aws_s3_bucket.caixa_do_edemir`](data.tf): Busca dados de um bucket S3 já existente.
+- [`data.aws_dynamodb_table.tableName`](data.tf): Consulta uma tabela DynamoDB existente.
 
-     ```hcl
-     data "aws_ami" "amazon_linux" {
-       most_recent = true
-       owners      = ["amazon"]
+## Como funciona
 
-       filter {
-         name   = "name"
-         values = ["amzn2-ami-hvm-*-x86_64-gp2"]
-       }
-     }
-     ```
+1. **Defina o data source** no arquivo [`data.tf`](data.tf).
+2. **Use os dados consultados** em outputs ([`outputs.tf`](outputs.tf)), locals ([`locals.tf`](locals.tf)), ou recursos.
 
-2. **Compartilhamento entre módulos**
+## Diferença entre resource e data
 
-   - Um módulo pode usar `data` para acessar recursos definidos em outro.
+| Bloco      | Finalidade                    | Exemplo                    |
+| ---------- | ----------------------------- | -------------------------- |
+| `resource` | Cria/gerencia recurso novo    | `resource "aws_s3_bucket"` |
+| `data`     | Consulta recurso já existente | `data "aws_s3_bucket"`     |
 
-3. **Consulta de informações dinâmicas**
-   - Buscar dados como zonas de disponibilidade, IPs públicos, tags, etc.
-
----
-
-### 🔁 Diferença entre `resource` e `data`
-
-| Bloco Terraform | Finalidade                                   | Ações           | Exemplo                    |
-| --------------- | -------------------------------------------- | --------------- | -------------------------- |
-| `resource`      | Cria e gerencia um recurso novo              | Criar/modificar | `resource "aws_s3_bucket"` |
-| `data`          | Lê um recurso já existente (somente leitura) | Consultar       | `data "aws_s3_bucket"`     |
-
----
+##
