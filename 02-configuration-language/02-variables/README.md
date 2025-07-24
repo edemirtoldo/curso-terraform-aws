@@ -41,8 +41,8 @@ resource "aws_s3_bucket" "exemplo" {
 
 ### Dicas rápidas
 
-- Sempre defina description para melhor documentação
+- Sempre defina `description` para melhor documentação
 
-- Use sensitive = true para dados confidenciais
+- Use `sensitive = true` para dados confidenciais
 
-- Combine variáveis com locals para organizar valores derivados
+- Combine variáveis com `locals` para organizar valores derivados
