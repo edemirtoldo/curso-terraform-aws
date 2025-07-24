@@ -19,7 +19,7 @@ Interpolação em Terraform permite **inserir dinamicamente valores dentro de st
 bucket = "${var.prefix}-meu-bucket"
 ```
 
-## ✔️ Construir strings dinâmicas
+### ✔️ Construir strings dinâmicas
 
 ```hcl
 output "url" {
@@ -27,7 +27,7 @@ output "url" {
 }
 ```
 
-⚠️ Quando NÃO usar interpolação (Terraform 0.12+)
+### ⚠️ Quando NÃO usar interpolação (Terraform 0.12+)
 
 Desde o Terraform 0.12, interpolação em valores simples não é mais necessária.
 
@@ -52,7 +52,7 @@ name = var.nome
 | Expressão dentro de string         | ✅ Sim             | `"${var.env}-${var.project}"`        |
 | Apenas referenciar atributo ou ID  | ❌ Não             | `ami = data.aws_ami.amazon_linux.id` |
 
-🧪 Exemplo completo
+### 🧪 Exemplo completo
 
 ```hcl
 variable "env" {
