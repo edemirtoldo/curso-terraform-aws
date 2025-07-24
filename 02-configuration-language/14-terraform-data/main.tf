@@ -2,18 +2,18 @@
 # https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec
 
 provider "aws" {
-  region  = "eu-central-1"
-  profile = "tf_macm1_ggasparoto"
+  region  = "us-east-1"
+  profile = "tf_thinkpad_edemirtoldo"
 
   default_tags {
     tags = {
       "Project"    = "Curso AWS com Terraform"
       "Module"     = "Configuration Language"
       "Component"  = "terraform_data, local-exec"
-      "CreatedAt"  = "2023-11-12"
+      "CreatedAt"  = "2025-07-24"
       "ManagedBy"  = "Terraform"
-      "Owner"      = "Cleber Gasparoto"
-      "Repository" = "github.com/cleber-gasparoto-org/curso-terraform-aws-3s"
+      "Owner"      = "Edemir Toldo"
+      "Repository" = "github.com/edemirtoldo/curso-terraform-aws"
     }
   }
 }
