@@ -29,6 +29,7 @@ Veja os tutoriais nos subdiretórios:
 - [02-using-s3-backend](03-remote-state/02-using-s3-backend/README.md)
 - [03-backend-file](03-remote-state/03-backend-file/README.md)
 - [04-backend-cli](03-remote-state/04-backend-cli/README.md)
+- [05-outputs](03-remote-state/05-outputs/README.md)
 
 ## 04 - Terraform CLI
 
