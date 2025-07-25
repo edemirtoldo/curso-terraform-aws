@@ -9,10 +9,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "tfstate-2023-871055234888"
+    bucket         = "tfstate-2025-703671905295"
     key            = "dev/02-using-s3-backend/terraform.tfstate"
-    region         = "eu-central-1"
-    profile        = "tf_macm1_ggasparoto"
-    dynamodb_table = "tflock-tfstate-2023-871055234888"
+    region         = "us-east-1"
+    profile        = "tf_thinkpad_edemirtoldo"
+    dynamodb_table = "tflock-tfstate-2025-703671905295"
   }
 }
