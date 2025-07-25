@@ -27,6 +27,8 @@ Veja os tutoriais nos subdiretórios:
 
 [Leia aqui](03-remote-state/README.md)
 
+- [01-backend-bucket](03-remote-state/01-backend-bucket/README.md)
+
 ## 04 - Terraform CLI
 
 [Leia aqui](04-terraform-cli/README.md)
