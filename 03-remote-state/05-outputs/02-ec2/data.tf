@@ -18,9 +18,9 @@ data "terraform_remote_state" "vpc" {
   backend = "s3"
 
   config = {
-    bucket  = "tfstate-2023-871055234888"
+    bucket  = "tfstate-2025-703671905295"
     key     = "dev/05-outputs/networking/terraform.tfstate"
-    region  = "eu-central-1"
-    profile = "tf_macm1_ggasparoto"
+    region  = "us-east-1"
+    profile = "tf_thinkpad_edemirtoldo"
   }
 }
