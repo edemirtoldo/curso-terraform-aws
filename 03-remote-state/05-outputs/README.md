@@ -47,14 +47,17 @@ Esta pasta demonstra como **compartilhar informações de infraestrutura** (outp
    - Em `02-ec2/outputs.tf`, veja o ARN e o IP público da instância criada.
 
 4. **Destrua a infraestrutura:**
-   - Primeiro em `01-vpc`:
+
+   - Primeiro em `02-ec2`:
      ```sh
      terraform destroy -auto-approve
      ```
-   - Depois em `02-ec2`:
+   - Depois em `01-vpc`:
+
      ```sh
      terraform destroy -auto-approve
      ```
+
      Isso garante que dependências sejam respeitadas e recursos não fiquem órfãos.
 
 ## Por que usar assim?
