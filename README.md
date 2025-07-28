@@ -37,7 +37,7 @@ Veja os tutoriais nos subdiretórios:
 
 ## 05 - Modules
 
-[Leia aqui](05-modules/README.md)
+- [01-consuming-modules](05-modules/01-consuming-modules/README.md)
 
 ## 06 - Terraform Test
 
