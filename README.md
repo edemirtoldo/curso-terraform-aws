@@ -43,7 +43,7 @@ Veja os tutoriais nos subdiretórios:
 
 ## 06 - Terraform Test
 
-[Leia aqui](06-terraform-test/README.md)
+- [06-terraform-test](06-terraform-test/README.md)
 
 ## 07 - Static Website
 
