@@ -124,6 +124,28 @@ Ative o auto-complete para facilitar a digitação dos comandos:
 terraform -install-autocomplete
 ```
 
+## 🔧 terraform init – Opções Gerais Explicadas
+
+O comando terraform init é usado para inicializar um diretório Terraform. Isso inclui baixar os provedores, configurar o backend (se definido), e preparar o diretório para uso.
+
+A seguir, as principais opções que você verá ao rodar terraform init -help, com explicações:
+
+### ✅ Opções mais úteis no dia a dia
+
+| Opção                    | Explicação                                                                                                           |                                                                                              |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| \`-backend=true          | false\`                                                                                                              | Habilita ou desabilita a configuração de backend. Default: `true`.                           |
+| `-backend-config=PATH`   | Permite passar parâmetros de configuração para o backend (ex: bucket, key, region etc). Pode ser usado várias vezes. |                                                                                              |
+| \`-get=true              | false\`                                                                                                              | Define se o Terraform deve baixar os módulos (default: `true`).                              |
+| \`-get-plugins=true      | false\`                                                                                                              | ⚠️ Obsoleto – Plugins agora fazem parte dos provedores.                                      |
+| \`-input=true            | false\`                                                                                                              | Interativo ou não – se `false`, não perguntará nada e usará valores padrão.                  |
+| \`-lock=true             | false\`                                                                                                              | Ativa ou desativa o _state lock_ (travamento do estado durante alterações). Default: `true`. |
+| `-lock-timeout=DURATION` | Tempo que o Terraform deve esperar pela liberação do lock (ex: `60s`, `2m`).                                         |                                                                                              |
+| `-no-color`              | Remove cores da saída – útil para logs ou automações.                                                                |                                                                                              |
+| `-plugin-dir=DIR`        | Diretório para plugins locais (casos avançados).                                                                     |                                                                                              |
+| `-reconfigure`           | Reconfigura o backend, mesmo que já esteja inicializado. Muito usado se você mudou algo no `backend`.                |                                                                                              |
+| `-upgrade`               | Atualiza os provedores e módulos para a última versão permitida.                                                     |                                                                                              |
+
 ### 📂 Estrutura dos arquivos
 
 - main.tf, ec2.tf, data.tf, variables.tf, outputs.tf: Exemplos de recursos, variáveis e outputs.
