@@ -146,6 +146,96 @@ A seguir, as principais opções que você verá ao rodar terraform init -help, 
 | `-reconfigure`           | Reconfigura o backend, mesmo que já esteja inicializado. Muito usado se você mudou algo no `backend`.                |                                                                                              |
 | `-upgrade`               | Atualiza os provedores e módulos para a última versão permitida.                                                     |                                                                                              |
 
+### 📌 Exemplos práticos
+
+1. Init com backend remoto e variáveis separadas:
+
+```bash
+terraform init \
+  -backend=true \
+  -backend-config="bucket=my-bucket" \
+  -backend-config="key=dev/terraform.tfstate" \
+  -backend-config="region=us-east-1"
+```
+
+2. Init forçando reconfiguração do backend:
+
+```bash
+terraform init -reconfigure
+```
+
+3. Init em modo não-interativo e sem cores (ex: CI/CD):
+
+```bash
+terraform init -input=false -no-color
+```
+
+## 📌 terraform plan -help — Planeja a execução
+
+Opções úteis:
+
+| Opção               | Explicação                                                                        |                                                    |
+| ------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------- |
+| \`-input=true       | false\`                                                                           | Permite ou não entrada interativa. Em CI: `false`. |
+| \`-lock=true        | false\`                                                                           | Usa travamento do estado.                          |
+| `-lock-timeout=...` | Tempo de espera para o lock. Ex: `60s`.                                           |                                                    |
+| `-out=ARQUIVO`      | Salva o plano em um arquivo `.tfplan` (útil para revisão ou aplicação posterior). |                                                    |
+| \`-refresh=true     | false\`                                                                           | Atualiza os dados do estado com o provedor.        |
+| `-target=RESOURCE`  | Planeja apenas um recurso específico. Ex: `aws_instance.web`.                     |                                                    |
+| `-var="KEY=VALUE"`  | Passa variáveis direto no CLI.                                                    |                                                    |
+| `-var-file=ARQUIVO` | Usa um arquivo de variáveis (ex: `dev.tfvars`).                                   |                                                    |
+
+### Exemplo
+
+```bash
+terraform plan -out=plan.tfplan -var-file="dev.tfvars"
+```
+
+## 🚀 terraform apply -help — Executa as mudanças
+
+## Opções úteis:
+
+| Opção                | Explicação                                           |                                          |
+| -------------------- | ---------------------------------------------------- | ---------------------------------------- |
+| `-auto-approve`      | Pula a confirmação interativa (usado em automações). |                                          |
+| \`-input=true        | false\`                                              | Entrada interativa. Em scripts: `false`. |
+| \`-lock=true         | false\`                                              | Usa travamento do state.                 |
+| `-lock-timeout=...`  | Tempo de espera para o lock.                         |                                          |
+| \`-refresh=true      | false\`                                              | Atualiza dados antes de aplicar.         |
+| `-target=RESOURCE`   | Aplica só um recurso.                                |                                          |
+| `-var` / `-var-file` | Mesmo uso que no `plan`.                             |                                          |
+
+### Exemplo:
+
+```bash
+terraform apply -auto-approve -var-file="dev.tfvars"
+```
+
+### Ou aplicando um plano já salvo:
+
+```bash
+terraform apply plan.tfplan
+```
+
+## 💣 terraform destroy -help — Destroi os recursos
+
+### Opções úteis:
+
+| Opção                | Explicação                             |                     |
+| -------------------- | -------------------------------------- | ------------------- |
+| `-auto-approve`      | Pula confirmação interativa.           |                     |
+| \`-input=true        | false\`                                | Entrada interativa. |
+| \`-lock=true         | false\`                                | Usa travamento.     |
+| `-lock-timeout=...`  | Tempo de espera para lock.             |                     |
+| `-target=RESOURCE`   | Destroi apenas o recurso especificado. |                     |
+| `-var` / `-var-file` | Mesmo uso que nos anteriores.          |                     |
+
+Exemplo:
+
+```bash
+terraform destroy -auto-approve -var-file="dev.tfvars"
+```
+
 ### 📂 Estrutura dos arquivos
 
 - main.tf, ec2.tf, data.tf, variables.tf, outputs.tf: Exemplos de recursos, variáveis e outputs.
