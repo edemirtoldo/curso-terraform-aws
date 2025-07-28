@@ -33,7 +33,7 @@ Veja os tutoriais nos subdiretórios:
 
 ## 04 - Terraform CLI
 
-[Leia aqui](04-terraform-cli/README.md)
+- [04-terraform-cli](04-terraform-cli/README.md)
 
 ## 05 - Modules
 
