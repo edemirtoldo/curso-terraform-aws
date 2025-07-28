@@ -5,7 +5,7 @@
 # Terraform roda os testes na sequência em que foram declarados
 
 variables {
-  aws_region     = "eu-west-3" # Paris
+  aws_region     = "sa-east-1" # São Paulo 
   bucket_name    = "este-e-um-nome-de-balde-aleatorio-1234567890"
   table_name     = "usuarios"
   read_capacity  = 5
@@ -23,7 +23,7 @@ run "validate_inputs" {
   command = plan
 
   variables {
-    aws_region     = "europe-west-3"
+    aws_region     = "sa-east-1"
     bucket_name    = "nome de bucket invalido"
     table_name     = "nome de tabela invalido"
     read_capacity  = 0

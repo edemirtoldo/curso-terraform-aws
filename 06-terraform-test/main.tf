@@ -10,10 +10,10 @@ provider "aws" {
     tags = {
       "Project"    = "Curso AWS com Terraform"
       "Module"     = "Terraform Test"
-      "CreatedAt"  = "2023-11-14"
+      "CreatedAt"  = "2025-07-28"
       "ManagedBy"  = "Terraform"
-      "Owner"      = "Cleber Gasparoto"
-      "Repository" = "github.com/cleber-gasparoto-org/curso-terraform-aws-3s"
+      "Owner"      = "Edemir Toldo"
+      "Repository" = "github.com/edemirtoldo/curso-terraform-aws"
     }
   }
 }

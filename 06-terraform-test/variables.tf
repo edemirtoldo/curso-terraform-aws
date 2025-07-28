@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "The region to deploy the infra to"
-  default     = "eu-central-1" # Frankfurt
+  default     = "us-east-1" # N.Virginia
   type        = string
 
   validation {
