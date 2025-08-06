@@ -47,8 +47,6 @@ Veja os tutoriais nos subdiretórios:
 
 ## 07 - Static Website
 
-[Leia aqui](07-static-website/README.md)
-
 - [07-static-website](07-static-website/README.md)
 
 ## 08 - Serverless App
