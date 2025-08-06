@@ -7,9 +7,9 @@ locals {
   common_tags = {
     "Project"    = "Curso AWS com Terraform"
     "Module"     = "Static Website"
-    "CreateAt"   = "2023-11-15"
+    "CreateAt"   = "2025-08-06"
     "ManagedBy"  = "Terraform"
-    "Owner"      = "Cleber Gasparoto"
-    "Repository" = "github.com/cleber-gasparoto-org/curso-terraform-aws-3s"
+    "Owner"      = "Edemir Toldo"
+    "Repository" = "github.com/edemirtoldo/curso-terraform-aws"
   }
 }
