@@ -6,7 +6,7 @@ Este projeto demonstra como criar e publicar um **site estático moderno** usand
 
 ## 📊 Diagrama da Solução
 
-![Diagrama da Arquitetura](diagrama.png)
+![Diagrama da Arquitetura](07-static-website/diagram.png)
 
 ---
 
