@@ -51,7 +51,7 @@ Veja os tutoriais nos subdiretórios:
 
 ## 08 - Serverless App
 
-[Leia aqui](08-serverless-app/README.md)
+- [08-serverless-app](08-serverless-app/README.md)
 
 ## 09 - Autoscaling App
 
