@@ -55,4 +55,4 @@ Veja os tutoriais nos subdiretórios:
 
 ## 09 - Autoscaling App
 
-[Leia aqui](09-autoscaling-app/README.md)
+- [09-autoscaling-app](09-autoscaling-app/README.md)
