@@ -5,10 +5,10 @@ provider "aws" {
     tags = {
       "Project"    = "Curso AWS com Terraform"
       "Module"     = "Serverless App"
-      "CreateAt"   = "2023-11-16"
+      "CreateAt"   = "2025-08-06"
       "ManagedBy"  = "Terraform"
-      "Owner"      = "Cleber Gasparoto"
-      "Repository" = "github.com/cleber-gasparoto-org/curso-terraform-aws-3s"
+      "Owner"      = "Edemir Toldo"
+      "Repository" = "github.com/edemirtoldo/curso-terraform-aws"
     }
   }
 }

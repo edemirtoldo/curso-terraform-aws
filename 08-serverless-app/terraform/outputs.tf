@@ -22,8 +22,12 @@ output "lambda_sqs_invoke_url" {
   value = module.lambda_sqs.invoke_arn
 }
 
+# output "api_url" {
+#   value = aws_api_gateway_deployment.this.invoke_url
+# }
+
 output "api_url" {
-  value = aws_api_gateway_deployment.this.invoke_url
+  value = aws_api_gateway_stage.this.invoke_url
 }
 
 output "bucket_name_lambda_artefacts" {
