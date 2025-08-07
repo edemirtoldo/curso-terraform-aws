@@ -1,7 +1,7 @@
 variable "aws_region" {
   type        = string
   description = "The region to deploy to"
-  default     = "eu-central-1"
+  default     = "us-east-1"
 }
 
 variable "environment" {
@@ -24,9 +24,10 @@ variable "instance_config" {
     key_name = optional(string, null)
   })
   default = {
-    ami      = "ami-0479653c00e0a5e59"
+    # ami      = "ami-0479653c00e0a5e59"
+    ami      = "ami-050499786ebf55a6a"
     type     = "t4g.micro"
-    key_name = "cleber_kp"
+    key_name = "terraform"
   }
 }
 
